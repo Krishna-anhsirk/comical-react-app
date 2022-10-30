@@ -30,7 +30,7 @@ const customFetch = async (url, { body, ...customConfig }) => {
     if (data.success) {
       return {
         data: data.data,
-        succes: true,
+        success: true,
       };
     }
 
@@ -39,7 +39,7 @@ const customFetch = async (url, { body, ...customConfig }) => {
     console.error("error");
     return {
       message: error.message,
-      succes: false,
+      success: false,
     };
   }
 };
